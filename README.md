@@ -67,11 +67,25 @@ The more error I introduce into the dataset, the more interesting the results be
 <img src="https://github.com/nps6-uwf/perceptron-THB/blob/main/assets/Figure_1.png?raw=true"></img>
 
 Sample output after running "perceptron-THB.py":
-Using perceptron to classify ['1 satang', '5 baht']
-Weights:  [  3.77165317 -41.54356934]
-Misclassifications:  0
-Found a separating hyperplace in 968 iterations.
-Accuracy:  100.00%
+<table>
+  <tr>
+    <td>Using perceptron to classify</td><td>['1 satang', '50 satang']</td>
+  </tr>
+  <tr>
+    <td>Weights</td><td>[ 11.           3.56406557 -63.21304217]</td>
+  </tr>
+  <tr>
+    <td>Misclassifications:</td><td>0</td>
+  </tr>
+  <tr>
+    <td>Found a separating hyperplace in:</td><td>968 iterations</td>
+  </tr>
+  <tr>
+    <td>Accuracy:</td><td>100.00%</td>
+  </tr>
+</table>
+
+  
 
 ## Conclusions/ Improvements
 <ul>
