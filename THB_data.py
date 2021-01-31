@@ -1,3 +1,7 @@
+# Author: Nick Sebasco 
+# Date: 1/31/2021
+# python version 3.8
+
 from random import sample, choice, random
 import numpy as np
 import matplotlib.pyplot as plt
