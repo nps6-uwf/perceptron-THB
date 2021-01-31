@@ -67,8 +67,3 @@ def plot_data(dataset, w = None):
     plt.xlabel("diameter (mm)")
     plt.ylabel("weight (g)")
     plt.show()
-
-if False:
-    # Testing gen dataset
-    dataset, labels = gen_dataset()
-    plot_data(dataset)
