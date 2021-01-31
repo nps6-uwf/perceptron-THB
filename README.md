@@ -3,7 +3,7 @@
 ## Overview
 Using the perceptron learning algorithm to differentiate between Thai currency, specifically Thai coins: (เหรียญ  riianR).
 
-<img src="thai-coins.jpg"></img>
+<img src="https://github.com/nps6-uwf/perceptron-THB/blob/main/assets/thai-coins.jpg?raw=true"></img>
 
 This repository contains two files:
 <ol>
