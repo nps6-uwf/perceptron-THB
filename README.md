@@ -92,5 +92,6 @@ Sample output after running "perceptron-THB.py":
   <li>The algorithm is only capable of binary classifcation which is kind of boring in this case because there are much more than 2 THai coins.</li>
   <li>No consideration was made on finding the optimal hyperplane.</li>
   <li>It might be interesting to add a parameter to the perceptron learning algorithm "allowed_misclassifcations", this will allow more leniency.</li>
+  <li>Add hyperparameter "learning rate" to PLA</li>
 </ul>
 
