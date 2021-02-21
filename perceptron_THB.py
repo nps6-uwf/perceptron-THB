@@ -40,7 +40,8 @@ def perceptron_learning_algorithm(
     weights: np.array = None,
     permute: bool = True,
     max_iterations: float = float("inf"),
-    learning_rate: float = 1.0
+    learning_rate: float = 1.0,
+    random_init: bool = True
     ) -> (np.array, int, int):
     """
     parameters:
@@ -52,6 +53,7 @@ def perceptron_learning_algorithm(
         max_iterations: # of maximum allowed iterations.  default set at infinity.
         learning rate: This is a scaling factor for the update rule.  The correction nudge
             given to the weight vector during an update can be scaled by this "hyperparameter".
+        random_init: boolean specifying whether or not the weight vector should be randomly initialized.
     Assumptions:
         + Data set is linearly separable.  If it is not we risk infinite iteration.
         To mitigate this we can set max_iterations or throw an error. This can 
@@ -71,7 +73,8 @@ def perceptron_learning_algorithm(
 
     # 1) initialize weights (if needed)
     weights = weights or np.zeros(len(train[0][0]))
-    weights = np.array([random() * 1e4 for _ in range(len(train[0][0]))])
+    if random_init:
+        weights = np.array([random() * 1e4 for _ in range(len(train[0][0]))])
 
     # 2) this variable will track how many correct classifications we have.
     correctly_classified = 0
@@ -169,7 +172,8 @@ if __name__ == "__main__":
         weights = None,
         permute = False,
         max_iterations = 1e4,
-        learning_rate=learning_rate
+        learning_rate=learning_rate,
+        random_init = True
     )
 
     # 1) Choose validation scheme
